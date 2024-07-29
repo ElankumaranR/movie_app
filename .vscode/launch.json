@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MovieApplication",
+            "request": "launch",
+            "mainClass": "movie.app.MovieApplication",
+            "projectName": "movie"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-MovieApplication<movie>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
