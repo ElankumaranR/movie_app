@@ -4,6 +4,13 @@
             "type": "java",
             "name": "MovieApplication",
             "request": "launch",
+            "mainClass": "movie.MovieApplication",
+            "projectName": "movie"
+        },
+        {
+            "type": "java",
+            "name": "MovieApplication",
+            "request": "launch",
             "mainClass": "movie.app.MovieApplication",
             "projectName": "movie"
         },
