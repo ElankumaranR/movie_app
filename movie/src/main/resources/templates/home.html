@@ -3,9 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netflix-like Webpage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: #fff;
+        }
+        header {
+            background-color: #111;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .hero {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #e50914;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ff1f3d;
+        }
+        .featured {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .movie-card {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .movie-card:hover {
+            transform: translateY(-10px);
+        }
+        .movie-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .movie-card h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        footer {
+            background-color: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>HOME</h1>
+    <!-- Header section (navigation, logo, etc.) -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+        <!-- Hero section with background image -->
+        <section class="hero">
+            <h1>Welcome to Netflix</h1>
+            <p>Watch unlimited movies and TV shows anytime, anywhere.</p>
+            <a href="#" class="btn">Start Watching</a>
+        </section>
+
+        <!-- Featured movies or TV shows section -->
+        <section class="featured">
+            <h2>Featured</h2>
+            <div class="movie-grid">
+                <!-- Example movie cards -->
+                <div class="movie-card">
+                    <img src="movie1.jpg" alt="Movie 1">
+                    <h3>Movie 1</h3>
+                </div>
+                <div class="movie-card">
+                    <img src="movie2.jpg" alt="Movie 2">
+                    <h3>Movie 2</h3>
+                </div>
+                <!-- Add more movie cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Your Company</p>
+    </footer>
 </body>
 </html>
